@@ -39,8 +39,8 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Vetrina", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contatto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Vetrina", "Vetrina", "Scarpe", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Catalogo", "Index", "Scarpe", new { area = "" }, new { @class = "nav-link" })</li>
                     <li class="ms-auto">
 
                         @Html.ActionLink(isLogged ? "Logout" : "Login", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
