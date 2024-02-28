@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<main>
+    <section class="row mt-2" aria-labelledby="aspnetTitle">
+        <h1 id="title">Scarpe & Co.</h1>
+        <p class="lead">
+            Il posto dove trovare le tue scarpe da tennis.
+        </p>
+        <div class="d-flex justify-content-start gap-5">
+            <div class="d-flex justify-content-center gap-3 flex-column mx-5">
+                <a href="~/Scarpe/index">
+
+                    <button class="btn btn-danger shadow p-2">I nostri prodotti</button>
+                </a>
+                <a href="~/Scarpe">
+                    <button class="btn btn-outline-danger shadow p-2" onclick="">Aggiungi scarpe</button>
+                </a>
+            </div>
+            <img src="https://www.redplus.eu/wp-content/uploads/2020/07/Foto-07-05-20-21-50-52-3.jpg"
+                 alt="Immagine campo da tennis"
+                 class="shadow"
+                 style="max-height:600px;object-fit:contain" />
+        </div>
+    </section>
+</main>
