@@ -640,6 +640,8 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Scarpe\Index.cshtml" />
     <Content Include="Views\Scarpe\Vetrina.cshtml" />
+    <Content Include="Views\Scarpe\Edit.cshtml" />
+    <Content Include="Views\Scarpe\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

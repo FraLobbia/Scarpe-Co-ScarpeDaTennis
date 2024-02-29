@@ -1,7 +1,7 @@
-﻿using System.Configuration;
+﻿using Scarpe_Co.Models;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Web.Mvc;
-
 public class AccountController : Controller
 {
     // GET: /Account/Login

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Scarpa>
+﻿@model IEnumerable<Scarpe_Co.Models.Scarpa>
 
 @{
     ViewBag.Title = "Vetrina";
@@ -6,22 +6,26 @@
 
 <h1 class="text-danger my-5">Vetrina</h1>
 
+<div class="container">
 
-<div class="row column-gap-2 ">
+
+    <div class="row row-gap-2">
 
 
-    @foreach (var item in Model)
-    {
-
-        <div class="card bg-danger col-3" @*style="width: 18rem;"*@>
-            <img src="@item.imgCopertina" class="card-img-top" alt="@item.Nome">
-            <div class="card-body">
-                <h5 class="card-title">@item.Nome</h5>
-                <h6 class="badge bg-success mb-2 text-muted">@item.Prezzo €</h6>
-                <p class="card-text">@item.Descrizione</p>
+        @foreach (var item in Model)
+        {
+            <div class="col-3">
+                <div class="card bg-warning card-group h-100" @*style="width: 18rem;"*@>
+                    <img src="@item.imgCopertina" class="card-img-top" alt="@item.Nome">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Nome</h5>
+                        <h6 class="badge bg-success mb-2 text-muted">@item.Prezzo €</h6>
+                        <p class="card-text">@item.Descrizione</p>
+                        <a href="@Url.Action("Details", "Scarpe", new { id = item.id_scarpa })" class="btn btn-danger">Dettagli</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        }
 
-    }
-
+    </div>
 </div>

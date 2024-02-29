@@ -37,10 +37,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
+                <ul class="navbar-nav flex-grow-1 align-items-center">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Vetrina", "Vetrina", "Scarpe", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Catalogo", "Index", "Scarpe", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li><div class="vr text-white"></div></li>
+                    <li>@Html.ActionLink("Modifica Catalogo", "Index", "Scarpe", new { area = "" }, new { @class = "nav-link" })</li>
                     <li class="ms-auto">
 
                         @Html.ActionLink(isLogged ? "Logout" : "Login", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
